@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        header{
+            text-align:center;
+        }
+        
+        nav{
+            width: 100%;
+            background-color: rgb(223, 195, 118);
+            height: auto; 
+        }
+        /* .list{
+            font-size: larger;
+            padding: 20px;
+            color: black;
+            text-decoration: none; 
+        } */
+
+        .navigation {
+            display: inline-block;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .dropdown {
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: antiquewhite;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 12px 16px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .slideshow-container {
+            max-width: 500px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides img {
+            margin-top: 20px;
+            width: 98vw; 
+            height: 350px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rajasthan Technical University, Kota</h1>
+        <img src="./college photos/rtu logo.jpg" alt="RTU Logo" height = "130px" width = "130px" >
+    </header>
+    <nav>
+
+        <div class="dropdown">
+            <a href="#" class="navigation">Home</a>
+        <div class="dropdown-content">
+            <a href="#" class="house">Courses</a>
+            <a href="#" class="house">Departments</a>
+            <a href="#" class="house">Faculties</a>
+            <a href="#" class="house">Library</a>
+        </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#cou" class="navigation">Courses</a>
+        <div class="dropdown-content">
+            <a href="#" class="house">Bachelor of Technology (B.Tech)</a>
+            <a href="#" class="house">Master of Technology (M.Tech)</a>
+            <a href="#" class="house">Master of Business Administration (MBA)</a>
+        </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#dep" class="navigation">Departments</a>
+        <div class="dropdown-content">
+            <a href="#" class="house">Department of Computer Science Engineering</a>
+            <a href="#" class="house">Department of Electronics Engineering</a>
+            <a href="#" class="house">Department of Electrical Engineering</a>
+            <a href="#" class="house">Department of Civil Engineering</a>
+            <a href="#" class="house">Department of Mechanical Engineering</a>
+        </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#fac" class="navigation">Faculties</a>
+        <div class="dropdown-content">
+            <a href="#" class="house">Dr. Harish Sharma ( Professor and Head ) - Computer Science Engineering</a>
+            <a href="#" class="house">Prof. R. S. Meena ( Professor and Head ) - Electronics Engineering</a>
+            <a href="#" class="house">Dr. Annapurna Bhargava ( Professor and Head ) - Electrical Engineering</a>
+            <a href="#" class="house">Dr. B.P. Suneja ( Professor and Head ) - Civil Engineering</a>
+            <a href="#" class="house">Dr. Vijay Kumar Gorana ( Professor and Head ) - Mechanical Engineering</a>
+        </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#lib" class="navigation">Library</a>
+        </div>
+    
+        <!-- <h2 style="margin-top: 30px;"></h2>
+        <a href="#" class="list">Home</a>
+        <a href="#" class="list">Departments</a>
+        <a href="#" class="list">Courses</a>
+        <a href="#" class="list">Faculties</a>
+        <a href="#" class="list">Library</a>  -->
+    
+    </nav>
+
+    <div class="slideshow-container" style="display: flex; justify-content: center;">
+        
+        <div class="mySlides">
+            <img src="./college photos/image8.jpg" >
+        </div>
+
+        <div class="mySlides">
+            <img src="./college photos/image2.jpg" >
+        </div>
+
+        <div class="mySlides">
+            <img src="./college photos/image6.jpg" >
+        </div>
+
+        <div class="mySlides">
+            <img src="./college photos/image7.jpg" >
+        </div>
+
+        <div class="mySlides">
+            <img src="./college photos/image5.jpg" >
+        </div>
+
+    </div>
+
+    <div class="Courses" id="cou">
+        <h2 style="margin-top: 30px;">Courses</h2>
+        <h4 style="margin-top: 20px;">*Bachelor of Technology (B.Tech):</h4>
+        <ul>
+            <li>Computer Science Engineering</li>
+            <li>Information Technology</li>
+            <li>Electrical Engineering</li>
+            <li>Civil Engineering</li>
+            <li>Mechanical Engineering</li>
+        </ul>
+
+        <h4 style="margin-top: 20px;">*Master of Technology (M.Tech):</h4>
+        <ul>
+            <li>Computer Science Engineering</li>
+            <li>Information Technology</li>
+            <li>Electrical Engineering</li>
+            <li>Civil Engineering</li>
+            <li>Mechanical Engineering</li>
+        </ul>
+
+        <h4 style="margin-top: 20px;">*Master of Business Administration (MBA):</h4>
+        <ul>
+            <li>Finance</li>
+            <li>Marketing</li>
+            <li>Human Resource Management</li>
+            <li>Information Technology Management</li>
+        </ul>
+
+    </div>
+
+    <div class="Departments" id="dep">
+        <h2 style="margin-top: 50px;">Departments</h2>
+        <ul>
+            <li>Department of Computer Science Engineering</li>
+            <li>Department of Electronics Engineering</li>
+            <li>Department of Electrical Engineering</li>
+            <li>Department of Civil Engineering</li>
+            <li>Department of Mechanical Engineering</li>
+        </ul>
+    </div>
+    
+    <div class="Faculities" id="fac">
+        <h2 style="margin-top: 30px;">Faculities</h2>
+        <p>Our experienced and dedicated faculties are committed to nurturing the next generation of leaders.</p>
+            
+        <ul>
+            <li>Dr. Harish Sharma ( Professor and Head ) - Computer Science Engineering</li>
+            <li>Prof. R. S. Meena ( Professor and Head ) - Electronics Engineering</li>
+            <li>Dr. Annapurna Bhargava ( Professor and Head ) - Electrical Engineering</li>
+            <li>Dr. B.P. Suneja ( Professor and Head ) - Civil Engineering</li>
+            <li>Dr. Vijay Kumar Gorana ( Professor and Head ) - Mechanical Engineering</li>
+        </ul>
+    </div>
+    <div class="Library" id="lib">
+        <h2 style="margin-top: 30px;">Library</h2>
+        <p>Central Library of Rajasthan Technical University, Kota ( Formerly knows University college of Engineering, Kota ) was established 1984. It caters to the information needs of the faculty members, students, staff, and research scholars. It works on an open access system. The Central Library possesses around 1,00,043 books and more then 9975 e-journals covering the disciplines of all Departments as</p>
+        <ul>
+            <li>Mechanical Engineering</li>
+            <li>Production and Industrial Engineering</li>
+            <li>Civil Engineering</li>
+            <li>Electrical Engineering</li>
+            <li>Electronics and Communication Engineering</li>
+            <li>Electronic Instrumentation Control Engineering</li>
+            <li>Computer Science</li>
+            <li>Information Technology</li>
+        </ul>
+            <p>The Central Library collection also comprises printed documents such as books, reports, theses, standards, Atlases, Patents and back volumes of journals. The non-book collection includes material like audio/video cassettes and CD-ROM discs etc.
+            The Central Library is a member of Indian National Digital Library in Engineering, Sciences, and Technology and All India Council of Technical Education (INDEST-AICTE) Consortium, New Delhi for accessing e-journals and also member of Institute for Steel Development and Growth (INSDAG), KOLKATA for Sharing it’s resources in the interest of faculty and students. Central Library is also a Member of Developing Library Network (DELNET) New Delhi for sharing the resources among its Member Libraries.
+            Central Library has been subscribing e-journals of IEL online, ASCE online, ASME online, Emereld-95, Access Engineering Library, J-Gate(JET) ASTM Digital Library and various digital libraries for accessing e-journals.
+            Central Library is housed in a two storied separate building which can accommodate around 150 users at a time to persue the academic and research activities by way of reading books, accessing electronic journals and internet and computer programming. It is connected to high speed internet. All activities of Central Library are computerized, including bar-coded ID cards and separate On- line public access catalogue(OPAC) terminal to know the status of books at any time since 2015.</p>
+    </div>
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
